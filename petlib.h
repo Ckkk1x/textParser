@@ -3,8 +3,6 @@
 
 #include <stdio.h>
 
-char *file_path;
-
 void copy();
 
 #endif
