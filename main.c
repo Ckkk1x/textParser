@@ -1,9 +1,5 @@
 #include "petlib.h"
 
-
-
-
-
 int main(void)
 {
     int choice;
@@ -11,8 +7,11 @@ int main(void)
     choice = -1;
     while(1)
     {
+        system("clear"); // clears console
         printf("=========== Main menu ===========\n");
         printf("1. Stats\n");
+        printf(" %s\n", file_path);
+        printf(" %s\n", file_text);
         printf("\n0. Exit\n");
 
         scanf("%d", &choice);
@@ -21,16 +20,20 @@ int main(void)
         {
             break;
         }
-        switch (choice)
+        else if (choice >= 1 && choice < 2)
         {
-            case 1:
-                stats();
-                break;
-
-            default:
-                break;
+            // function for intialization of file_path and file_text
+            initialize();
+            switch (choice)
+            {
+                case 1:
+                    stats();
+                    break;
+    
+                default:
+                    break;
+            }
         }
-        system("clear"); // clears console
     };
     return (0);
 }
