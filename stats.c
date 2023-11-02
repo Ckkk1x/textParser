@@ -2,7 +2,7 @@
 
 void stats()
 {
-    printf("VAZHNIYE DANNIE!!!!\n");
+    printf("%s\n", file_text);
 
     // Construction to stop console to let user read
     printf("Enter something to continue...");

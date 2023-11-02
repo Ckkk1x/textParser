@@ -8,8 +8,7 @@ extern char *file_path;
 extern char *file_text;
 
 void clear_stdin();
-void copy();
-void stats();
 void initialize();
+void stats();
 
 #endif
