@@ -2,8 +2,8 @@
 
 void stats()
 {
-
     printf("%s\n", file_text);
+
     // Construction to stop console to let user read
     printf("Enter something to continue...");
     char ch = ' ';
