@@ -27,7 +27,6 @@ int main(void)
                 case 1:
                     stats();
                     break;
-    
                 default:
                     break;
             }
