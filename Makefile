@@ -1,7 +1,10 @@
 CC = gcc
 CFLAGS = -Werror -Wextra -Wall -c
 
-all: petlib.a
+all: launch
+
+launch : petlib.a
+	gcc -g main.c petlib.a
 
 petlib.a : objects
 	ar -rcs $@ *.o

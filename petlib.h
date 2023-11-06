@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern char *file_path;
-extern char *file_text;
+extern char *file_path; //global variable
+extern char *file_text; //global variable
 
 void clear_stdin();
 void initialize();
