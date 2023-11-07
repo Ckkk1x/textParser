@@ -10,6 +10,7 @@ int main(void)
         system("clear"); // clears console
         printf("=========== Main menu ===========\n");
         printf("1. Stats\n");
+        printf("2. Time Count\n");
         printf("\n0. Exit\n");
 
         scanf("%d", &choice);
@@ -18,7 +19,7 @@ int main(void)
         {
             break;
         }
-        else if (choice >= 1 && choice < 2)
+        else if (choice >= 1 && choice < 3)
         {
             // function for intialization of file_path and file_text
             initialize();
@@ -27,10 +28,16 @@ int main(void)
                 case 1:
                     stats();
                     break;
+                case 2:
+                read_time();
+                   break;
+                
                 default:
                     break;
             }
         }
-    };
+        
+        
+    }
     return (0);
 }

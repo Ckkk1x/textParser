@@ -10,5 +10,6 @@ extern char *file_text; //global variable
 void clear_stdin();
 void initialize();
 void stats();
+void read_time();
 
 #endif
