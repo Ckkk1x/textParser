@@ -28,8 +28,20 @@ static double time_count() {
 }
 void read_time()
 {
-    double res = time_count();
-    printf("Averrage reading result :%f\n",res); 
+    double minutes = time_count();
+    int seconds_total =(int)(minutes * 60);
+    int hours = seconds_total / 3600;
+    int minutes_left = (seconds_total % 3600) / 60;
+    int seconds_left = seconds_total % 60;
+
+
+
+
+
+
+
+   
+    printf("Read time: %02d:%02d:%02d\n", hours, minutes_left, seconds_left);
     // Construction to stop console to let user read
     printf("\nEnter something to continue...\n");
     char temp_variable = ' ';
