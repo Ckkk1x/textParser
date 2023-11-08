@@ -10,6 +10,7 @@ void initialize()
     FILE *fp;
     long file_size;
 
+    system("clear");
     if(file_path)
     {
         int leave = 0;
@@ -25,6 +26,7 @@ void initialize()
                 switch (choice)
                 {
                 case 1:
+                    system("clear");
                     return;
                 case 2:
                     leave = 1;
