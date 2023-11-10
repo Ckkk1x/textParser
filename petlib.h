@@ -11,5 +11,6 @@ void clear_stdin();
 void initialize();
 void stats();
 void read_time();
+void new_line();
 
 #endif
